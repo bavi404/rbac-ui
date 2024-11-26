@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# RBAC-UI: Role-Based Access Control Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An advanced **Role-Based Access Control (RBAC)** system for managing users, roles, and permissions. It features a responsive interface, dynamic permissions, interactive analytics, and secure authentication with multi-language support using `i18next`.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Management**:
+  - Add, edit, delete, and search users.
+  - Assign roles and set user status (active/inactive).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Role Management**:
+  - Add, edit, or delete roles.
+  - Assign dynamic permissions to roles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interactive Analytics**:
+  - View user and role statistics via bar and pie charts.
+  - Real-time updates for user and role counts.
 
-### `npm test`
+- **Multi-Language Support**:
+  - Switch seamlessly between languages using `i18next`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Authentication**:
+  - Secure login using JWT.
+  - Multi-factor authentication (MFA) via OTP.
 
-### `npm run build`
+- **Responsive Design**:
+  - Optimized for desktop, tablet, and mobile devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Ensure you have the following installed:
+- Node.js
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bavi404/rbac-ui.git
+   cd rbac-ui
+npm install
+npm start
+Backend Setup
+Set up the backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ensure server.js is configured correctly.
+Mock API endpoints can be replaced with a database in the future.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies:
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the backend server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+Copy code
+node server.js
+Verify the backend is running at http://localhost:5000.
 
-### Code Splitting
+Usage
+Open the app in your browser at http://localhost:3000.
+Log in with valid credentials.
+Navigate through the dashboard:
+Users: Manage user details and roles.
+Roles: Add, edit, or delete roles and assign permissions.
+Dashboard: View analytics and monitor system status.
+Screenshots
+Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+User Management
 
-### Analyzing the Bundle Size
+Role Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
+Frontend:
 
-### Making a Progressive Web App
+React.js
+Tailwind CSS for styling
+Chart.js for analytics
+i18next for multi-language support
+Backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Node.js with Express
+Socket.io for real-time updates
+bcrypt and JWT for secure authentication
+File Structure
+plaintext
+Copy code
+rbac-ui/
+│
+├── public/              # Public assets
+├── src/
+│   ├── components/      # Reusable components (Navbar, Modals, etc.)
+│   ├── pages/           # Main pages (Dashboard, UserManagement, etc.)
+│   ├── context/         # Contexts for authentication, roles, etc.
+│   ├── App.js           # Main app entry point
+│   └── index.js         # React DOM entry point
+├── server.js            # Backend server
+├── package.json         # Project dependencies
+├── README.md            # Project documentation
+└── .gitignore           # Files to be ignored by Git
 
-### Advanced Configuration
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Contact
+For questions or feedback, feel free to reach out:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Author: Bavishya Sankaranarayanan
+Email: sankaranarayananbavishya@gmail.com
+GitHub: bavi404
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **How to Use It**
+1. Create a new file named `README.md` in your project directory.
+2. Paste the above content into the file.
+3. Save and commit the file:
+   ```bash
+   git add README.md
+   git commit -m "Add README file"
+   git push
