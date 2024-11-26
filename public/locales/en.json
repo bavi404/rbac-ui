@@ -1,0 +1,16 @@
+{
+    "welcome": "Welcome",
+    "totalUsers": "Total Users",
+    "totalRoles": "Total Roles",
+    "usersPerRole": "Users per Role",
+    "userStatusDistribution": "User Status Distribution",
+    "activeUsers": "Active Users",
+    "inactiveUsers": "Inactive Users",
+    "userManagement": "User Management",
+    "searchUsers": "Search Users",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status"
+  }
+  
